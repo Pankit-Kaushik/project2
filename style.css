@@ -1,0 +1,111 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .todo-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    padding: 20px;
+  }
+  
+  .todo-title {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* List Styles */
+  .todo-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+  }
+  
+  .todo-list li:hover {
+    background-color: #f9f9f9;
+  }
+  
+  /* Checkbox and Label */
+  input[type="checkbox"] {
+    margin-right: 10px;
+    accent-color: #4caf50; /* Custom color for checkbox */
+  }
+  
+  label {
+    flex-grow: 1;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Delete Button */
+  .delete-btn {
+    background-color: #ff6b6b;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 6px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete-btn:hover {
+    background-color: #ff4a4a;
+  }
+  
+  /* Add New Task Input */
+  .todo-input-wrapper {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .todo-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .add-btn {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Completed Task Style */
+  input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
